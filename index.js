@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/',(request,response)=>{
-    return json({message:'server is up'});
+    return response.json({message:'server is up'});
 });
 
 app.post('/teste',(request,response)=>{
